@@ -1,0 +1,25 @@
+<div class="main-container">
+  <h2>To-Do List</h2>
+ <div class="form-container">
+    <form action='/' method='POST'>
+      <input id='input' type='text' name='input' placeholder='Insert task' />
+      <button type='submit'><img src="/images/add-circle-outline.svg" alt=""></button>
+    </form>
+ </div>
+  <div class="tasks-container">
+    
+    {{#each tasks}}
+    
+     <div class='individual-task'>
+        {{input}}
+       
+        <form method='GET' action='/task/{{id}}/edit'>
+          <button class="edit-btn" type='submit'><img src="/images/create-outline.svg" alt="Edit image"></button>
+        </form>
+        <form method='POST' action='/task/{{id}}/delete'>
+          <button class="delete-btn" type='submit'><img src="images/trash-outline.svg" alt="trash icon"></button>
+        </form>
+     </div tasks-container>
+    {{/each}}
+  </div>
+</div >

@@ -1,0 +1,9 @@
+<div class='main-container'>
+  <h2>Edit your task:</h2>
+  <div class='form-container'>
+    <form action='/task/{{task.id}}/edit' method='POST'>
+      <input id='edit-input' type='text' name='input' value='{{task.input}}' />
+      <button type='submit'>Edit</button>
+    </form>
+  </div>
+</div>

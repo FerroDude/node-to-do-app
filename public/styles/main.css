@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: teal;
+}
+
+html,
+body,
+.individual-task {
+  height: 100%;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50em;
+  border-radius: 30px;
+  background-color: #f0f7ee9a;
+}
+
+.individual-task {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  position: relative;
+  font-size: 1.5em;
+}
+
+h2 {
+  margin: auto auto;
+  color: #f0f7ee;
+  padding-top: 3em;
+
+  font-size: 50px;
+  text-align: center;
+}
+
+img {
+  width: 2em;
+}
+
+.form-container {
+  height: 3em;
+}
+
+input,
+button {
+  margin: 0;
+}
+
+.edit-btn,
+.delete-btn {
+  position: absolute;
+}
+.edit-btn {
+  right: 5em;
+  bottom: 30%;
+}
+
+.delete-btn {
+  right: 2em;
+  bottom: 30%;
+}
